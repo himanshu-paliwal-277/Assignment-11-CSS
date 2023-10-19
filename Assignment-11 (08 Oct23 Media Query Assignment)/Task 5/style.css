@@ -1,0 +1,45 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.3rem;
+  color: white;
+  height: 100vh;
+}
+
+header, footer {
+  background-color: black;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+main .SideBar {
+  background-color: rgb(0, 177, 0);
+  padding: 24px;
+}
+
+main .Content {
+  padding: 24px;
+  background-color: orange;
+}
+
+@media screen and (max-width: 670px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .SideBar, .Content {
+    flex-grow: 1;
+  }
+}
